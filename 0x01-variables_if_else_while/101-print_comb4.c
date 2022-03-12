@@ -25,7 +25,7 @@ int main(void)
 			if (ch < 700)
 			{
 				putchar(',');
-				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
