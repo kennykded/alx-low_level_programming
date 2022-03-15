@@ -1,5 +1,5 @@
-#include "main.h
-"
+#include "main.h"
+
 /**
  * _islower -mcheck lower case. *
  * @c: character in ASCII code
