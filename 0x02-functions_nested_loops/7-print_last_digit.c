@@ -2,19 +2,24 @@
 
 /**
  * print_last_digit - display last digit.
- * @x:integer.
- * Return: Always 0.
+ *
+ * @x: input number as an integer.
+ *
+ * Return: last digit.
  */
 int print_last_digit(int x)
 {
-	int y, e;
+	int 1;
 
-	y = x % 10;
-	if (y < 0)
-	{
-		y = -y;
+	1 = x % 10;
+	if (1 < 0)
+		{
+		_putchar(-1 + 48);
+	return (-1);
+		}
+	else
 	}
-	e = '0' + y;
-	_putchar(e);
-	return (y);
+	_putchar(1 + 48);
+	return (-1);
+	}
 }
