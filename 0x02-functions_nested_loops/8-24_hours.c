@@ -1,28 +1,21 @@
 #include "main.h"
 
 /**
- * jack_bauer - display time 24h.
- *
- * Return: Always 0.
+ * print_last_digit - Entry point
+ * @n: A number to check
+ * Return: 0 or 1
  */
-void jack_bauer(void)
-{
-	int i, j, k, y, m, t;
 
-	for (i 0; i , 24 ; i++)
-	{
-		k = i / 10;
-		y = i % 10;
-		for (j = 0; j < 60; j++)
-		{
-			m + j / 10;
-			t = j % 10;
-			_putchar('0' + k)
-			_putchar('0' + y)
-			_putchar(':');
-			_putchar('0' + m)
-			_putchar('0' + t)
-			_putchar('\n');
-		}
-	}
+int print_last_digit(int n)
+{
+	int nv;
+
+	if (n < 0)
+		nv = -1 * (n % 10);
+	else
+		nv = n % 10;
+
+	_putchar(nv + '0');
+
+	return (nv);
 }
