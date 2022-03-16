@@ -1,21 +1,21 @@
 #include "main.h"
 
 /**
- * print_last_digit - display last digit.
- * @x:integer.
- * Return: last digit.
+ * print_last_digit - Entry point
+ * @n: A number to check
+ * Return: 0 or 1
  */
-int print_last_digit(int x)
-{
-	int y, e;
 
-	y = x % 10;
-	if (y < 0)
-	{
-		y = -y;
-	}
-	e = '0' + y;
-	}
-	_putchar(e);
-	return (y);
+int print_last_digit(int n)
+{
+	int nv;
+
+	if (n < 0)
+		nv = -1 * (n % 10);
+	else
+		nv = n % 10;
+
+	_putchar(nv + '0');
+
+	return (nv);
 }
