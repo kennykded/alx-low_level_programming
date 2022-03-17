@@ -1,1 +1,1 @@
-Readme for this directory
+debugging project
