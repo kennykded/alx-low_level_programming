@@ -1,21 +1,19 @@
 #include "main.h"
+
 /**
- * main - checking code
- *Write a program that prints _putchar, followed by a new line.
- *The program should return 0
- * Return: Always 0 success
+ * _isupper - a function that checks for uppercase characters
+ * @c: a variable that stores letters
+ * Return: Returns a value of 1 if the variable c contains an uppercase letter
  */
 
-int main(void)
+int _isupper(int c)
 {
-	char s[] = "_putchar";
-	int i = 0;
-
-	while (s[i] != '\0')
+	if (c >= 'A' && c <= 'Z')
 	{
-		_putchar(s[i]);
-		i++;
+		return (1);
 	}
-	_putchar(10);
-	return (0);
+	else
+	{
+		return (0);
+	}
 }
