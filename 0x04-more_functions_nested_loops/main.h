@@ -1,19 +1,15 @@
-#include "main.h"
-
-/**
- * _isupper - a function that checks for uppercase characters
- * @c: a variable that stores letters
- * Return: Returns a value of 1 if the variable c contains an uppercase letter
- */
-
-int _isupper(int c)
-{
-	if (c >= 'A' && c <= 'Z')
-	{
-		return (1);
-	}
-	else
-	{
-		return (0);
-	}
-}
+#ifndef _MAIN_H_
+#define _MAIN_H_
+int _putchar(char c);
+int _isupper(int c);
+int _isdigit(int c);
+int mul(int a, int b);
+void print_numbers(void);
+void print_most_numbers(void);
+void more_numbers(void);
+void print_line(int n);
+void print_diagonal(int n);
+void print_square(int size);
+void print_triangle(int size);
+void print_number(int n);
+#endif
