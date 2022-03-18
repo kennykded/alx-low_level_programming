@@ -1,17 +1,38 @@
 #include "main.h"
 
+void print_integer(int m);
+
 /**
- * print_numbers - prints the numbers,from 0 to 9, followed by a new line
- * Return: nothing
+ * print_number - a function that prints an integer.
+ * @n: An input integer
+ * Return: Nothing
  */
 
-void print_numbers(void)
+void print_number(int n)
 {
-	int i;
-
-	for (i = 48; i < 58; i++)
+	if (n == 0)
+		_putchar('0');
+	else if (n < 0)
 	{
-		_putchar(i);
+		_putchar('-');
+		print_integer(n * -1);
 	}
-	_putchar(10);
+	else
+		print_integer(n);
+}
+
+/**
+ * print_integer - A function to priting n
+ * @m: an input unsigned integer
+ * Return: Nothing
+ */
+void print_integer(int m)
+{
+	unsigned int i = 1000000000;
+
+	for (; i >= 1; i /= 10)
+		if (m / i != 0)
+		{
+			_putchar((m / i) % 10 + '0');
+		}
 }
