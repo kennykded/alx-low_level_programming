@@ -1,1 +1,1 @@
-readme for variable function project
+readme for variadic function project
