@@ -10,4 +10,4 @@ size_t listint_len(const listint_t *h)
 {
 	return (h ? listint_len(h->next) + 1 : 0);
 
-
+}
